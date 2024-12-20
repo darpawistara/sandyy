@@ -1,0 +1,143 @@
+
+    body {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        background: #c1c1c1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page-container {
+        padding: 1em 2em;
+        background: white;
+        margin: 1em;
+        border-radius: 4px;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 
+                    0 1px 1px 0 rgba(0, 0, 0, 0.14), 
+                    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .header {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom: 1px solid #989898;
+        padding: 0.5em;
+    }
+
+    .content-container {
+        padding: 0.5em;
+    }
+
+    .content-header {
+        margin: 0.75em 0;
+    }
+
+    .disclaimer-container {
+        padding: 1em;
+        font-style: italic;
+    }
+
+    .data-container {
+        clear: both;
+        padding: 0.5em 0;
+    }
+
+    .data-title {
+        float: left;
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .data-content {
+        float: left;
+    }
+
+    .data-content::before {
+        content: ': ';
+    }
+
+    .footer {
+        border-top: 1px solid #989898;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 0.5em;
+    }
+
+    .footer-content {
+        padding: 0 1em;
+        text-align: center;
+    }
+
+    .footer-generated-content {
+        padding-top: 2em;
+        font-size: 10px;
+    }
+
+    .emphasis-text {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    @media screen and (max-width: 40em) {
+        .page-container {
+            padding: 0.5em;
+            margin: 0;
+        }
+
+        .data-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .data-title {
+            width: 100%;
+            padding: 0.5em 0;
+        }
+
+        .data-content {
+            width: 100%;
+            padding-left: 1em;
+        }
+    }
+
+    @media print {
+        .MuiDialog-root {
+            position: absolute !important;
+        }
+
+        .MuiDialog-paper {
+            box-shadow: none;
+            overflow-y: visible;
+        }
+    }
+
+    .MuiDialog-scrollPaper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .MuiDialog-container {
+        height: 100%;
+        outline: none;
+    }
+
+    .MuiDialog-paper {
+        margin: 32px;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .MuiDialog-paperFullWidth {
+        width: calc(100% - 64px);
+    }
+
+    .MuiDialog-paperFullScreen {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        max-width: 100%;
+        max-height: none;
+        border-radius: 0;
+    }
